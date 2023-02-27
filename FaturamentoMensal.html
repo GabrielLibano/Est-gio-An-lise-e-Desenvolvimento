@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        const estado = ["SP", "RJ", "MG", "ES", "Outros"]
+        const faturamento = [6783643, 3667866, 2922988, 2716548, 1984953]
+        let tot = 0;
+
+        for(let i=0; i<faturamento.length; i++){
+            tot = tot + faturamento[i]
+        }
+
+        for(let i=0;i<faturamento.length;i++){
+            totEstado = (faturamento[i]/tot)*100
+            console.log(`Porcentagem de ${estado[i]} foi de: ${totEstado}%`)
+        }
+        
+
+    </script>
+</body>
+</html>
